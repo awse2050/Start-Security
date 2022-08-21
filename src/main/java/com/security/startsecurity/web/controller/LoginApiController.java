@@ -37,9 +37,9 @@ public class LoginApiController {
     @GetMapping("/session")
     public ResponseEntity<String> session(@SessionAttribute(name = "auth", required = false) Authentication authentication,
                                           HttpSession httpSession) {
-        System.out.println("authenticatedMember : ... : " + authentication);
 
-        System.out.println("httpSession.getAttribute(\"auth\") : " + httpSession.getAttribute("auth"));
+        System.out.println("SessionAttribute: "+ authentication);
+
         return ResponseEntity.status(HttpStatus.OK).body("success..");
     }
 }

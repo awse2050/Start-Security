@@ -18,14 +18,14 @@ public class CustomAuthenticationManager implements AuthenticationManager {
 
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
-        System.out.println("인증합니다.");
-        System.out.println("authentication : " + authentication);
         String email = authentication.getName();
-
+        // 실제 가입한 유저인지 조회한다.
         AuthenticatedMember authenticatedMember = (AuthenticatedMember) customUserDetailsService.loadUserByUsername(email);
-        System.out.println(" customUserDetailsService.loadUserByUsername(email); .....");
 
-        // password Match
+        /*
+            TODO : 복호화 후 비교
+         */
+
         return authenticatedMember.generateAuthenticationToken();
     }
 

@@ -1,4 +1,4 @@
-package com.security.startsecurity.api.config;
+package com.security.startsecurity.api.security.config;
 
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest;
 import org.springframework.context.annotation.Bean;
@@ -36,8 +36,4 @@ public class SecurityConfig {
             web.ignoring().requestMatchers(PathRequest.toStaticResources().atCommonLocations());
         };
     }
-
-//    public CustomAuthenticationFilter customAuthenticationFilter() {
-//        return new CustomAuthenticationFilter("/login", authenticationManager());
-//    }
 }
