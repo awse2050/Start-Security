@@ -1,7 +1,9 @@
 package com.security.startsecurity.web.controller;
 
+import com.security.startsecurity.api.dto.LoginPrincipal;
 import com.security.startsecurity.api.dto.LoginRequest;
 import com.security.startsecurity.api.security.CustomAuthenticationManager;
+import com.security.startsecurity.api.security.annotation.LoginUser;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -35,10 +37,11 @@ public class LoginApiController {
     }
 
     @GetMapping("/session")
-    public ResponseEntity<String> session(@SessionAttribute(name = "auth", required = false) Authentication authentication,
+    public ResponseEntity<String> session(@LoginUser LoginPrincipal loginPrincipal,
                                           HttpSession httpSession) {
 
-        System.out.println("SessionAttribute: "+ authentication);
+        System.out.println("SessionAttribute: "+ loginPrincipal);
+        System.out.println("httpSession : " +httpSession.getAttribute("auth"));
 
         return ResponseEntity.status(HttpStatus.OK).body("success..");
     }
