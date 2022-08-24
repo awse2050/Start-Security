@@ -1,4 +1,4 @@
-package com.security.startsecurity.v1.api.service;
+package com.security.startsecurity;
 
 import com.security.startsecurity.v1.api.dto.AuthenticatedMember;
 import com.security.startsecurity.v1.api.entity.Member;
@@ -10,18 +10,21 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
 
 @Service
 @RequiredArgsConstructor
+@Transactional
 public class CustomUserDetailsService implements UserDetailsService {
 
     private final MemberRepository memberRepository;
 
     @PostConstruct
     void setup() {
-        Member member = new Member("user@email.com", "121212");
+        Member member = new Member("user@email.com",
+                "$2a$10$2shDwQspIeYoMXDx.MYFMOqtmTCx6ius1SoXIi.3CUQVZSPGuH5y.");
         member.addMemberRoles(new MemberRole(member, Role.USER));
 
         memberRepository.save(member);
