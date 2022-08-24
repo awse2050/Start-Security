@@ -1,13 +1,12 @@
-package com.security.startsecurity.api.security;
+package com.security.startsecurity.v1.api.security;
 
-import com.security.startsecurity.api.dto.AuthenticatedMember;
-import com.security.startsecurity.api.service.CustomUserDetailsService;
+import com.security.startsecurity.v1.api.dto.AuthenticatedMember;
+import com.security.startsecurity.v1.api.service.CustomUserDetailsService;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class CustomAuthenticationManager implements AuthenticationManager {
 
     private final CustomUserDetailsService customUserDetailsService;

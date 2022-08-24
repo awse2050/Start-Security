@@ -1,10 +1,10 @@
-package com.security.startsecurity.api.service;
+package com.security.startsecurity.v1.api.service;
 
-import com.security.startsecurity.api.dto.AuthenticatedMember;
-import com.security.startsecurity.api.entity.Member;
-import com.security.startsecurity.api.entity.MemberRepository;
-import com.security.startsecurity.api.entity.MemberRole;
-import com.security.startsecurity.api.entity.Role;
+import com.security.startsecurity.v1.api.dto.AuthenticatedMember;
+import com.security.startsecurity.v1.api.entity.Member;
+import com.security.startsecurity.v1.api.entity.MemberRepository;
+import com.security.startsecurity.v1.api.entity.MemberRole;
+import com.security.startsecurity.v1.api.entity.Role;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

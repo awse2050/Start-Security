@@ -1,4 +1,4 @@
-package com.security.startsecurity.api.dto;
+package com.security.startsecurity.v1.api.dto;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

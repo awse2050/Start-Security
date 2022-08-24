@@ -1,4 +1,4 @@
-package com.security.startsecurity.api.dto;
+package com.security.startsecurity.v1.api.dto;
 
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;

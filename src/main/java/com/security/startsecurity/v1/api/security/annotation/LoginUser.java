@@ -1,4 +1,4 @@
-package com.security.startsecurity.api.security.annotation;
+package com.security.startsecurity.v1.api.security.annotation;
 
 
 import java.lang.annotation.ElementType;

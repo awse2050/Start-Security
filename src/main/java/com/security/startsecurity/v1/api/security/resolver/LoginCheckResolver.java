@@ -1,7 +1,7 @@
-package com.security.startsecurity.api.security.resolver;
+package com.security.startsecurity.v1.api.security.resolver;
 
-import com.security.startsecurity.api.dto.LoginPrincipal;
-import com.security.startsecurity.api.security.annotation.LoginUser;
+import com.security.startsecurity.v1.api.dto.LoginPrincipal;
+import com.security.startsecurity.v1.api.security.annotation.LoginUser;
 import org.springframework.core.MethodParameter;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.support.WebDataBinderFactory;
