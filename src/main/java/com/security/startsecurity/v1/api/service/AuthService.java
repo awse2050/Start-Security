@@ -1,7 +1,7 @@
-package com.security.startsecurity.api.service;
+package com.security.startsecurity.v1.api.service;
 
-import com.security.startsecurity.api.dto.LoginRequest;
-import com.security.startsecurity.api.security.CustomAuthenticationManager;
+import com.security.startsecurity.v1.api.dto.LoginRequest;
+import com.security.startsecurity.v1.api.security.CustomAuthenticationManager;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.Authentication;
 

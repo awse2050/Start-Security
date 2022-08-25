@@ -1,4 +1,4 @@
-package com.security.startsecurity.api.entity;
+package com.security.startsecurity.v1.api.entity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,13 +1,12 @@
-package com.security.startsecurity.api.security.config;
+package com.security.startsecurity.v1.api.security.config;
 
-import com.security.startsecurity.api.security.resolver.LoginCheckResolver;
-import org.springframework.context.annotation.Configuration;
+import com.security.startsecurity.v1.api.security.resolver.LoginCheckResolver;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.List;
 
-@Configuration
+//@Configuration
 public class SecurityWebConfig implements WebMvcConfigurer {
     @Override
     public void addArgumentResolvers(List<HandlerMethodArgumentResolver> resolvers) {

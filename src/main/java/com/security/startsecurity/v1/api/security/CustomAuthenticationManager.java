@@ -1,14 +1,12 @@
-package com.security.startsecurity.api.security;
+package com.security.startsecurity.v1.api.security;
 
-import com.security.startsecurity.api.dto.AuthenticatedMember;
-import com.security.startsecurity.api.service.CustomUserDetailsService;
-import org.springframework.security.authentication.AuthenticationManager;
+import com.security.startsecurity.CustomUserDetailsService;
+import com.security.startsecurity.v1.api.dto.AuthenticatedMember;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
-import org.springframework.stereotype.Component;
 
-@Component
-public class CustomAuthenticationManager implements AuthenticationManager {
+//@Component
+public class CustomAuthenticationManager {
 
     private final CustomUserDetailsService customUserDetailsService;
 
@@ -16,7 +14,6 @@ public class CustomAuthenticationManager implements AuthenticationManager {
         this.customUserDetailsService = customUserDetailsService;
     }
 
-    @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
         String email = authentication.getName();
         // 실제 가입한 유저인지 조회한다.

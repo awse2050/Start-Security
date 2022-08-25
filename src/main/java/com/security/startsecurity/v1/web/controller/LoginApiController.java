@@ -1,9 +1,9 @@
-package com.security.startsecurity.web.controller;
+package com.security.startsecurity.v1.web.controller;
 
-import com.security.startsecurity.api.dto.LoginPrincipal;
-import com.security.startsecurity.api.dto.LoginRequest;
-import com.security.startsecurity.api.security.CustomAuthenticationManager;
-import com.security.startsecurity.api.security.annotation.LoginUser;
+import com.security.startsecurity.v1.api.dto.LoginPrincipal;
+import com.security.startsecurity.v1.api.dto.LoginRequest;
+import com.security.startsecurity.v1.api.security.CustomAuthenticationManager;
+import com.security.startsecurity.v1.api.security.annotation.LoginUser;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
 
-@RestController
+//@RestController
 @RequestMapping("/api")
 public class LoginApiController {
 

@@ -1,6 +1,6 @@
-package com.security.startsecurity.api.entity;
+package com.security.startsecurity.v1.api.entity;
 
-import com.security.startsecurity.api.dto.AuthenticatedMember;
+import com.security.startsecurity.v1.api.dto.AuthenticatedMember;
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
