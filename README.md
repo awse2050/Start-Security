@@ -17,4 +17,5 @@
 5. `UserDetailsService` 에서 로그인시 받은 `username` 으로 사용자를 조회하고, 이후 로직에서 `password`를 비교한다음 인증 토큰객체를 반환한다.
 6. 인증이 완료되었으므로, 인증 토큰을 `AuthenticationFilter`가 최종적으로 받아서 `SecurityContextHolder`에 저장한다.
 
-
+#### 동작 프로세스에 대한 자세한 과정설명
+[Spring Security 실제 동작 프로세스 설명](https://awse2050.tistory.com/112)
